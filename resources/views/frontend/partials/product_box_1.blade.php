@@ -20,7 +20,7 @@
     }
 @endphp
 
-    <div class="product_img" style="height:400px;">
+    <div class="product_img" style="height:250px;">
         <a href="{{ $product_url }}">
             <img class="lazyload" src="{{ static_asset('assets/img/placeholder.jpg') }}"
                 data-src="{{ uploaded_asset($product->thumbnail_img) }}"
@@ -52,18 +52,20 @@
                 @endif
             </div>
         </div>
-        <div class="rating_wrap">
+        <div class="rating_wrap rating">
                 @php
                     $total = 0;
                     $total += $product->reviews->count();
                 @endphp
-                <div class="rating">
+                {{ renderStarRating($product->rating) }}
+                <!-- <div class="rating">
                     <div class="product_rate" style="width:{{ ($product->rating/5)*100 }}%"></div>
-                </div>
+                </div> -->
             <span class="rating_num">({{ $total }})</span>
         </div>
         <div class="pr_desc">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+            <?php echo $product->description; ?>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p> -->
         </div>
         <!-- <div class="pr_switch_wrap">
             <div class="product_color_switch">
@@ -72,6 +74,14 @@
                 <span data-color="#DA323F"></span>
             </div>
         </div> -->
+
+        <div class="list_product_action_box">
+            <ul class="list_none pr_action_btn">
+            <li class="add-to-cart"><a href="javascript:void(0)" onclick="showAddToCartModal({{ $product->id }})"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                <li><a href="javascript:void(0)" onclick="addToCompare({{ $product->id }})" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                <li><a href="javascript:void(0)" onclick="addToWishList({{ $product->id }})"><i class="icon-heart"></i></a></li>
+            </ul>
+        </div>
     </div>
 
 

@@ -19,7 +19,7 @@
                         <a href="javascript:void(0)" class="dropdown-toggle text-secondary fs-12 py-2" data-toggle="dropdown" data-display="static">
                             <span class="">{{ \App\Models\Language::where('code', $locale)->first()->name }}</span>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-left">
+                        <ul class="dropdown-menu dropdown-menu-left" style="z-index: 2000;">
                             @foreach (\App\Models\Language::where('status', 1)->get() as $key => $language)
                                 <li>
                                     <a href="javascript:void(0)" data-flag="{{ $language->code }}" class="dropdown-item @if($locale == $language) active @endif">
@@ -46,7 +46,7 @@
                         <a href="javascript:void(0)" class="dropdown-toggle text-secondary fs-12 py-2" data-toggle="dropdown" data-display="static">
                             {{ \App\Models\Currency::where('code', $currency_code)->first()->name }}
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                        <ul class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" style="z-index: 2000;">
                             @foreach (\App\Models\Currency::where('status', 1)->get() as $key => $currency)
                                 <li>
                                     <a class="dropdown-item @if($currency_code == $currency->code) active @endif" href="javascript:void(0)" data-currency="{{ $currency->code }}">{{ $currency->name }} ({{ $currency->symbol }})</a>

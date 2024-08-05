@@ -58,6 +58,31 @@
     </div>
 </section>
 
+
+<!-- START SECTION SUBSCRIBE NEWSLETTER -->
+<div class="section bg_default small_pt small_pb">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="heading_s1 mb-md-0 heading_light">
+                    <h3>Subscribe Our Newsletter</h3>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="newsletter_form">
+                    <form>
+                        <input type="text" required="" class="form-control rounded-0"
+                            placeholder="Enter Email Address">
+                        <button type="submit" class="btn btn-dark rounded-0" name="submit"
+                            value="Submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- START SECTION SUBSCRIBE NEWSLETTER -->
+
 <!-- footer subscription & icons -->
 <section class="py-3 text-light footer-widget border-bottom" style="border-color: #3d3d46 !important; background-color: #212129 !important;">
     <div class="container">
@@ -498,6 +523,23 @@
                     </ul>
                 </div>
             </div>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-md-0 text-center text-md-start">© 2024 All Rights Reserved by Bestwebcreator</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="footer_payment text-center text-lg-end">
+                        <li><a href="#"><img src="{{ static_asset('assets1/images/visa.png') }}" alt="visa"></a></li>
+                        <li><a href="#"><img src="{{ static_asset('assets1/images/discover.png') }}" alt="discover"></a></li>
+                        <li><a href="#"><img src="{{ static_asset('assets1/images/master_card.png') }}" alt="master_card"></a></li>
+                        <li><a href="#"><img src="{{ static_asset('assets1/images/paypal.png') }}" alt="paypal"></a></li>
+                        <li><a href="#"><img src="{{ static_asset('assets1/images/amarican_express.png') }}" alt="amarican_express"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
@@ -517,9 +559,9 @@
             </a>
         </div>
 
-        <!-- Categories -->
+        <!-- Shop -->
         <div class="col">
-            <a href="{{ route('categories.all') }}" class="text-secondary d-block text-center pb-2 pt-3 {{ areActiveRoutes(['categories.all'],'svg-active')}}">
+            <a href="{{ route('search') }}" class="text-secondary d-block text-center pb-2 pt-3 {{ areActiveRoutes(['categories.all'],'svg-active')}}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                     <g id="Group_25497" data-name="Group 25497" transform="translate(3373.432 -602)">
                       <path id="Path_2917" data-name="Path 2917" d="M126.713,0h-5V5a2,2,0,0,0,2,2h3a2,2,0,0,0,2-2V2a2,2,0,0,0-2-2m1,5a1,1,0,0,1-1,1h-3a1,1,0,0,1-1-1V1h4a1,1,0,0,1,1,1Z" transform="translate(-3495.144 602)" fill="#91919c"/>
@@ -528,7 +570,7 @@
                       <path id="Path_2920" data-name="Path 2920" d="M125.213,18a3.5,3.5,0,1,0,3.5,3.5,3.5,3.5,0,0,0-3.5-3.5m0,6a2.5,2.5,0,1,1,2.5-2.5,2.5,2.5,0,0,1-2.5,2.5" transform="translate(-3495.144 593)" fill="#91919c"/>
                     </g>
                 </svg>
-                <span class="d-block mt-1 fs-10 fw-600 text-reset {{ areActiveRoutes(['categories.all'],'text-primary')}}">{{ translate('Categories') }}</span>
+                <span class="d-block mt-1 fs-10 fw-600 text-reset {{ areActiveRoutes(['categories.all'],'text-primary')}}">{{ translate('Shop') }}</span>
             </a>
         </div>
         @php

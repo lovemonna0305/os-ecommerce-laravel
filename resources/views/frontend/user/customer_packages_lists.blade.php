@@ -69,7 +69,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">{{ translate('Select Payment Type') }}</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <input type="hidden" id="package_id" name="package_id" value="">
@@ -89,7 +89,7 @@
                         </div>
                     </div>
                     <div class="form-group text-right">
-                        <button type="button" class="btn btn-sm btn-primary rounded-0 transition-3d-hover mr-1" id="select_type_cancel" data-dismiss="modal">{{translate('Cancel')}}</button>
+                        <button type="button" class="btn btn-sm btn-primary rounded-0 transition-3d-hover mr-1" id="select_type_cancel" data-bs-dismiss="modal">{{translate('Cancel')}}</button>
                     </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">{{ translate('Purchase Your Package') }}</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body gry-bg px-3 pt-3" style="overflow-y: inherit;">
                     <form class="" id="package_payment_form" action="{{ route('customer_packages.purchase') }}" method="post">
@@ -181,7 +181,7 @@
                         </div>
 
                         <div class="form-group text-right">
-                            <button type="button" class="btn btn-sm btn-secondary rounded-0 transition-3d-hover mr-1" data-dismiss="modal">{{translate('cancel')}}</button>
+                            <button type="button" class="btn btn-sm btn-secondary rounded-0 transition-3d-hover mr-1" data-bs-dismiss="modal">{{translate('cancel')}}</button>
                             <button type="submit" class="btn btn-sm btn-primary rounded-0 transition-3d-hover mr-1">{{translate('Confirm')}}</button>
                         </div>
                     </form>
@@ -197,7 +197,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">{{ translate('Offline Package Purchase ') }}</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div id="offline_customer_package_purchase_modal_body"></div>
             </div>

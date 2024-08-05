@@ -3,7 +3,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">{{ translate('Recharge Wallet') }}</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body gry-bg px-3 pt-3" style="overflow-y: inherit;">
                 <form class="" action="{{ route('wallet.recharge') }}" method="post">

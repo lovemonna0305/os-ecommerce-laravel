@@ -178,14 +178,14 @@ button:focus:not(:focus-visible) {
 .border-2 {
 	border-width: 2px !important;
 }
-.btn {
+/* .btn {
 	border-width: 1px;
 	cursor: pointer;
 	line-height: normal;
 	padding: 12px 35px;
 	text-transform: capitalize;
 	transition: all 0.3s ease-in-out;
-}
+} */
 .btn.active:focus, .btn:active:focus {
 	box-shadow: none !important;
 }
@@ -1096,7 +1096,7 @@ button:focus:not(:focus-visible) {
 	border-radius: 0;
 	margin: 0;
 	padding: 0;
-	min-width: 14rem;
+	/* min-width: 14rem; */
 }
 .navbar-nav .dropdown-menu {
 	background-color: #252A2C;
@@ -1202,7 +1202,7 @@ button:focus:not(:focus-visible) {
 }
 .dropdown-item:focus, .dropdown-item:hover,
 .dropdown-item.active, .dropdown-item:active {
-	background-color: transparent;
+	/* background-color: transparent; */
 }
 .navbar .navbar-nav.attr-nav .dropdown-menu li a.active, 
 .navbar .navbar-nav.attr-nav .dropdown-menu li a:hover, 
@@ -5072,7 +5072,7 @@ footer .widget_title {
     vertical-align: middle;
     display: inline-block;
 }
-.rating_wrap .rating {
+/* .rating_wrap .rating {
     overflow: hidden;
     position: relative;
     height: 20px;
@@ -5090,7 +5090,7 @@ footer .widget_title {
 	left: 0;
 	float: left;
 	color: #F6BC3E;
-}
+} */
 .product_rate {
 	overflow: hidden;
 	float: left;

@@ -4,7 +4,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h6 class="modal-title fw-600">{{ translate('Login') }}</h6>
-                <button type="button" class="close" data-dismiss="modal">
+                <button type="button" class="close" data-bs-dismiss="modal">
                     <span aria-hidden="true"></span>
                 </button>
             </div>

@@ -76,7 +76,7 @@
     <!-- Back to shopping & Checkout buttons -->
     <div class="row gutters-5">
         <div class="col-sm-6">
-            <button class="btn btn-warning mb-3 mb-sm-0 btn-block rounded-0 text-white" data-dismiss="modal">{{ translate('Back to shopping')}}</button>
+            <button class="btn btn-warning mb-3 mb-sm-0 btn-block rounded-0 text-white" data-bs-dismiss="modal">{{ translate('Back to shopping')}}</button>
         </div>
         <div class="col-sm-6">
             <a href="{{ route('cart') }}" class="btn btn-primary mb-3 mb-sm-0 btn-block rounded-0">{{ translate('Proceed to Checkout')}}</a>

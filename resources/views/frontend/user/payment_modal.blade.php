@@ -1,6 +1,6 @@
 <div class="modal-header">
     <h5 class="modal-title" id="exampleModalLabel">{{ translate('Make Payment')}}</h5>
-    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
 <form class="" action="{{ route('purchase_history.make_payment') }}" method="post" enctype="multipart/form-data">
     @csrf

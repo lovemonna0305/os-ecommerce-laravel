@@ -71,7 +71,7 @@
     <!-- Animation CSS -->
     <link rel="stylesheet" href="{{ static_asset('assets1/css/animate.css') }}">	
     <!-- Latest Bootstrap min CSS -->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="{{ static_asset('assets1/bootstrap/css/bootstrap.min.css') }}"> -->
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"> 
@@ -105,6 +105,8 @@
 
     <!-- Latest jQuery --> 
     <script src="{{ static_asset('assets1/js/jquery-3.6.0.min.js') }}"></script> 
+    <!-- jquery-ui -->
+    <script src="{{ static_asset('assets1/js/jquery-ui.js') }}"></script>
     <!-- popper min js -->
     <script src="{{ static_asset('assets1/js/popper.min.js') }}"></script>
     <!-- Latest compiled and minified Bootstrap --> 
@@ -181,10 +183,10 @@
             --hov-primary: {{ get_setting('base_hov_color', '#9d1b1a') }};
             --soft-primary: {{ hex2rgba(get_setting('base_color','#d43533'),.15) }};
         }
-        body{
+        /* body{
             font-family: 'Public Sans', sans-serif;
             font-weight: 400;
-        }
+        } */
         
         .pagination .page-link,
         .page-item.disabled .page-link {
@@ -227,6 +229,10 @@
         }
 
         .pac-container { z-index: 100000; }
+
+        .las .la-star .active{
+            
+        }
     </style>
 
 @if (get_setting('google_analytics') == 1)
@@ -335,7 +341,7 @@
                 <div class="c-preloader text-center p-3">
                     <i class="las la-spinner la-spin la-3x"></i>
                 </div>
-                <button type="button" class="close absolute-top-right btn-icon close z-1 btn-circle bg-gray mr-2 mt-2 d-flex justify-content-center align-items-center" data-dismiss="modal" aria-label="Close" style="background: #ededf2; width: calc(2rem + 2px); height: calc(2rem + 2px);">
+                <button type="button" class="close absolute-top-right btn-icon close z-1 btn-circle bg-gray mr-2 mt-2 d-flex justify-content-center align-items-center" data-bs-dismiss="modal" aria-label="Close" style="background: #ededf2; width: calc(2rem + 2px); height: calc(2rem + 2px);">
                     <span aria-hidden="true" class="fs-24 fw-700" style="margin-left: 2px;">&times;</span>
                 </button>
                 <div id="addToCart-modal-body">

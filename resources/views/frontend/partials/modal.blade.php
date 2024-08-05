@@ -11,7 +11,7 @@
         <div class="modal-content">
 
             <div class="modal-header">
-                {{-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> --}}
+                {{-- <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">×</button> --}}
                 <h4 class="modal-title" id="myModalLabel">{{ translate('Confirmation')}}</h4>
             </div>
 
@@ -20,7 +20,7 @@
             </div>
 
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary rounded-0" data-dismiss="modal">{{ translate('Cancel')}}</button>
+                <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">{{ translate('Cancel')}}</button>
                 <a id="delete_link" class="btn btn-danger btn-ok rounded-0">{{ translate('Delete')}}</a>
             </div>
         </div>
@@ -36,7 +36,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">{{ translate('Bid For Product') }} <small id="min_bid_amount"></small> </h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                 </button>
             </div>
             <div class="modal-body">

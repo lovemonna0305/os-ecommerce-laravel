@@ -1,6 +1,6 @@
 <div class="modal-header">
     <h5 class="modal-title h6">{{translate('Review')}}</h5>
-    <button type="button" class="close" data-dismiss="modal">
+    <button type="button" class="close" data-bs-dismiss="modal">
     </button>
 </div>
 
@@ -63,7 +63,7 @@
             </div>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-sm btn-secondary rounded-0" data-dismiss="modal">{{translate('Cancel')}}</button>
+            <button type="button" class="btn btn-sm btn-secondary rounded-0" data-bs-dismiss="modal">{{translate('Cancel')}}</button>
             <button type="submit" class="btn btn-sm btn-primary rounded-0">{{translate('Submit Review')}}</button>
         </div>
     </form>

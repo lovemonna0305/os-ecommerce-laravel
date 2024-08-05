@@ -91,7 +91,7 @@
                                 <!-- Search -->
                                 <div class="mb-4 mt-3 px-3 mt-xl-0 px-xl-0">
                                     <div class="input-group w-100">
-                                        <input type="text" class="border border-right-0 rounded-0 fs-14 flex-grow-1" name="search" value="{{ $search }}" placeholder="{{translate('Search...')}}" autocomplete="off" style="padding: 14px;">
+                                        <input type="text" class="border border-right-0 rounded-0 fs-14 flex-grow-1" name="search" value="{{ $search }}" placeholder="{{translate('Search...')}}" autocomplete="off" style="padding-left: 12px;">
                                         <div class="input-group-append">
                                             <button class="btn bg-transparent hov-bg-light rounded-0 border border-left-0" type="submit" style="">
                                                 <i class="la la-search la-flip-horizontal fs-18 text-gray"></i>

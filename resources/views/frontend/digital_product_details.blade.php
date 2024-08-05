@@ -801,7 +801,7 @@
             <div class="modal-content position-relative">
                 <div class="modal-header">
                     <h5 class="modal-title fw-600 heading-5">{{ translate('Any question about this product?')}}</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -817,7 +817,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-primary fw-600" data-dismiss="modal">{{ translate('Cancel')}}</button>
+                        <button type="button" class="btn btn-outline-primary fw-600" data-bs-dismiss="modal">{{ translate('Cancel')}}</button>
                         <button type="submit" class="btn btn-primary fw-600">{{ translate('Send')}}</button>
                     </div>
                 </form>
@@ -831,7 +831,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h6 class="modal-title fw-600">{{ translate('Login')}}</h6>
-                    <button type="button" class="close" data-dismiss="modal">
+                    <button type="button" class="close" data-bs-dismiss="modal">
                         <span aria-hidden="true"></span>
                     </button>
                 </div>

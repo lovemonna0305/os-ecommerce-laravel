@@ -6,7 +6,7 @@
 <div class="banner_section slide_medium shop_banner_slider staggered-animation-wrap">
     <div id="carouselExampleControls" class="carousel slide carousel-fade light_arrow" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active background_bg" data-img-src="assets/images/banner1.png" style="background-image: url(assets/images/banner1.png);">
+            <div class="carousel-item active background_bg" data-img-src="{{ static_asset('assets1/images/banner1.png') }}" style="background-image: url({{ static_asset('assets1/images/banner1.png') }});">
                 <div class="banner_slide_content">
                     <div class="container"><!-- STRART CONTAINER -->
                         <div class="row">
@@ -14,14 +14,14 @@
                                 <div class="banner_content overflow-hidden">
                                 	<h5 class="mb-3 staggered-animation font-weight-light" data-animation="slideInLeft" data-animation-delay="0.5s">Get up to 50% off Today Only!</h5>
                                     <h2 class="staggered-animation" data-animation="slideInLeft" data-animation-delay="1s">Woman's Fashion</h2>
-                                    <a class="btn btn-fill-out rounded-0 staggered-animation text-uppercase" href="shop-left-sidebar.html" data-animation="slideInLeft" data-animation-delay="1.5s">Shop Now</a>
+                                    <a class="btn btn-fill-out rounded-0 staggered-animation text-uppercase" href="{{ route('search') }}" data-animation="slideInLeft" data-animation-delay="1.5s">Shop Now</a>
                                 </div>
                             </div>
                         </div>
                     </div><!-- END CONTAINER-->
                 </div>
             </div>
-            <div class="carousel-item background_bg" data-img-src="assets/images/banner2.png" style="background-image: url(assets/images/banner2.png);">
+            <div class="carousel-item background_bg" data-img-src="{{ static_asset('assets1/images/banner2.png') }}" style="background-image: url({{ static_asset('assets1/images/banner2.png') }});">
                 <div class="banner_slide_content">
                     <div class="container"><!-- STRART CONTAINER -->
                         <div class="row">
@@ -29,14 +29,14 @@
                                 <div class="banner_content overflow-hidden">
                                 	<h5 class="mb-3 staggered-animation font-weight-light" data-animation="slideInLeft" data-animation-delay="0.5s">50% off in all products</h5>
                                     <h2 class="staggered-animation" data-animation="slideInLeft" data-animation-delay="1s">Men's Fashion</h2>
-                                    <a class="btn btn-fill-out rounded-0 staggered-animation text-uppercase" href="shop-left-sidebar.html" data-animation="slideInLeft" data-animation-delay="1.5s">Shop Now</a>
+                                    <a class="btn btn-fill-out rounded-0 staggered-animation text-uppercase" href="{{ route('search') }}" data-animation="slideInLeft" data-animation-delay="1.5s">Shop Now</a>
                                 </div>
                             </div>
                         </div>
                     </div><!-- END CONTAINER-->
                 </div>
             </div>
-            <div class="carousel-item background_bg" data-img-src="assets/images/banner3.png" style="background-image: url(assets/images/banner3.png);">
+            <div class="carousel-item background_bg" data-img-src="{{ static_asset('assets1/images/banner3.png') }}" style="background-image: url({{ static_asset('assets1/images/banner3.png') }});">
                 <div class="banner_slide_content">
                     <div class="container"><!-- STRART CONTAINER -->
                         <div class="row">
@@ -44,7 +44,7 @@
                                 <div class="banner_content overflow-hidden">
                                 	<h5 class="mb-3 staggered-animation font-weight-light" data-animation="slideInLeft" data-animation-delay="0.5s">Taking your Viewing Experience to Next Level</h5>
                                     <h2 class="staggered-animation" data-animation="slideInLeft" data-animation-delay="1s">Summer Sale</h2>
-                                    <a class="btn btn-fill-out rounded-0 staggered-animation text-uppercase" href="shop-left-sidebar.html" data-animation="slideInLeft" data-animation-delay="1.5s">Shop Now</a>
+                                    <a class="btn btn-fill-out rounded-0 staggered-animation text-uppercase" href="{{ route('search') }}" data-animation="slideInLeft" data-animation-delay="1.5s">Shop Now</a>
                                 </div>
                             </div>
                         </div>
@@ -64,21 +64,21 @@
     	<div class="row">
         	<div class="col-md-6">
             	<div class="single_banner">
-                	<img src="assets/images/shop_banner_img1.png" alt="shop_banner_img1"/>
+                	<img src="{{ static_asset('assets1/images/shop_banner_img1.png') }}" alt="shop_banner_img1"/>
                     <div class="single_banner_info">
                         <h5 class="single_bn_title1">Super Sale</h5>
                         <h3 class="single_bn_title">New Collection</h3>
-                        <a href="shop-left-sidebar.html" class="single_bn_link">Shop Now</a>
+                        <a href="{{ route('search') }}" class="single_bn_link">Shop Now</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
             	<div class="single_banner">
-                	<img src="assets/images/shop_banner_img2.png" alt="shop_banner_img2"/>
+                	<img src="{{ static_asset('assets1/images/shop_banner_img2.png') }}" alt="shop_banner_img2"/>
                     <div class="single_banner_info">
                         <h3 class="single_bn_title">Gift</h3>
                         <h4 class="single_bn_title1">Sale 40% Off</h4>
-                        <a href="shop-left-sidebar.html" class="single_bn_link">Shop Now</a>
+                        <a href="{{ route('search') }}" class="single_bn_link">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -133,13 +133,13 @@
                             <h2>Accessories</h2>
                         </div>
                         <h5 class="mb-4">Sale Get up to 50% Off</h5>
-                        <a href="shop-left-sidebar.html" class="btn btn-fill-out rounded-0">Shop Now</a>
+                        <a href="{{ route('search') }}" class="btn btn-fill-out rounded-0">Shop Now</a>
                     </div>
                     <div class="medium_divider clearfix"></div>
                 </div>
                 <div class="col-md-5">
                     <div class="text-center trading_img">
-                        <img src="assets//images/tranding_img.png" alt="tranding_img"/>
+                        <img src="{{ static_asset('assets1/images/tranding_img.png') }}" alt="tranding_img"/>
                     </div>
                 </div>
             </div>
@@ -376,7 +376,7 @@ I also have one of Odelyn's shorter length knitted scarves, in white. It's very 
                         </div>
                         <div class="author_wrap">
                             <div class="author_img">
-                                <img src="assets/images/user_img1.jpg" alt="user_img1" />
+                                <img src="{{ static_asset('assets1/images/user_img1.jpg') }}" alt="user_img1" />
                             </div>
                             <div class="author_name">
                                 <h6>Penelope Watson-Farrar</h6>
@@ -395,7 +395,7 @@ Her high standard of designs have enabled me to have more choice within the fash
                         </div>
                         <div class="author_wrap">
                             <div class="author_img">
-                                <img src="assets/images/user_img2.jpg" alt="user_img2" />
+                                <img src="{{ static_asset('assets1/images/user_img2.jpg') }}" alt="user_img2" />
                             </div>
                             <div class="author_name">
                                 <h6>Tara Bhattacharya</h6>
@@ -410,7 +410,7 @@ I have also purchased a woolen shawl for myself which it looks beautiful worn bo
                         </div>
                         <div class="author_wrap">
                             <div class="author_img">
-                                <img src="assets/images/user_img3.jpg" alt="user_img3" />
+                                <img src="{{ static_asset('assets1/images/user_img3.jpg') }}" alt="user_img3" />
                             </div>
                             <div class="author_name">
                                 <h6>Sharon Arthur</h6>
@@ -425,7 +425,7 @@ I have also purchased a woolen shawl for myself which it looks beautiful worn bo
                         </div>
                         <div class="author_wrap">
                             <div class="author_img">
-                                <img src="assets/images/user_img4.jpg" alt="user_img4" />
+                                <img src="{{ static_asset('assets1/images/user_img4.jpg') }}" alt="user_img4" />
                             </div>
                             <div class="author_name">
                                 <h6>John Gibbons</h6>

@@ -36,7 +36,7 @@
     <div class="row align-items-center">
         <!-- Ask about this product -->
         <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 mb-3">
-            <a href="javascript:void();" onclick="goToView('product_query')" class="text-primary fs-14 fw-600 d-flex">
+            <a href="javascript:void(0);" onclick="goToView('product_query')" class="text-primary fs-14 fw-600 d-flex">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
                     <g id="Group_25571" data-name="Group 25571" transform="translate(-975 -411)">
                     <g id="Path_32843" data-name="Path 32843" transform="translate(975 411)" fill="#fff">
