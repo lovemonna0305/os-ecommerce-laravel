@@ -12,7 +12,7 @@
 }
 @media only screen and (min-width: 1400px) {
 	.container {
-		max-width: 1140px;
+		max-width: 1400px;
 	}
 }
 
@@ -501,7 +501,7 @@
 	float: left;
 }
 .navbar .navbar-nav.attr-nav li .nav-link {
-	padding: 20px 10px;
+	/* padding: 20px 10px; */
 }
 .navbar .navbar-nav.attr-nav li .nav-link.search_trigger,
 .navbar .navbar-nav.attr-nav li .nav-link.cart_trigger {

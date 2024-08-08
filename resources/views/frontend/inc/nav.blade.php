@@ -141,11 +141,11 @@
                 </div>
                 <ul class="navbar-nav attr-nav align-items-center">
 
-                    <li>
+                    <li id="compare">
                         @include('frontend.partials.compare')
                     </li>                
-                    <li>
-                    @include('frontend.partials.wishlist')
+                    <li id="wishlist">
+                        @include('frontend.partials.wishlist')
                         
                     </li>                
                     <li>
@@ -199,7 +199,7 @@
                         </a>
                         <div class="search_wrap">
                     </li>                
-                    <li class="dropdown cart_dropdown">
+                    <li class="dropdown cart_dropdown" id="cart_items">
                         @include('frontend.partials.cart')
                     </li>
                 </ul>
@@ -292,7 +292,7 @@
                         </span>
                     @else
                         <!--Login & Registration -->
-                        <span class="d-none d-xl-flex align-items-center nav-user-info ml-3">
+                        <span class="d-none d-xl-flex align-items-center nav-user-info ml-3 py-20px">
                             <!-- Image -->
                             <span class="size-40px rounded-circle overflow-hidden border d-flex align-items-center justify-content-center nav-user-img">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="19.902" height="20.012" viewBox="0 0 19.902 20.012">
@@ -554,7 +554,7 @@
 
             $.post('{{ route('orders.details') }}', { _token : AIZ.data.csrf, order_id : order_id}, function(data){
                 $('#order-details-modal-body').html(data);
-                $('#order_details').modal();
+                $('#order_details').modal('show');
                 $('.c-preloader').hide();
                 AIZ.plugins.bootstrapSelect('refresh');
             });

@@ -72,7 +72,7 @@
         }
 
         function showLoginModal() {
-            $('#login_modal').modal();
+            $('#login_modal').modal('show');
         }
     </script>
 @endsection

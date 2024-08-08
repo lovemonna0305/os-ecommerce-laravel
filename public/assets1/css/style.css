@@ -47,8 +47,8 @@ html, body {
 body {
 	background: #ffffff none repeat scroll 0 0;
     color: #687188;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    /* font-family: 'Poppins', sans-serif;
+    font-size: 16px; */
 }
 h1,h2,h3,h4,h5,h6 {
 	color: #292b2c;
@@ -588,7 +588,7 @@ button:focus:not(:focus-visible) {
 	background-color: #333;
 }
 .background_bg {
-	background-position: center center;
+	/* background-position: center center; */
 	background-size: cover;
 }
 .bg_size_auto {
@@ -1185,17 +1185,17 @@ button:focus:not(:focus-visible) {
 	-ms-flex-direction: row;
 	flex-direction: row;
 }
-.navbar-nav.attr-nav li .nav-link {
+/* .navbar-nav.attr-nav li .nav-link {
 	padding: 20px 10px;
 	position: relative;
 	white-space: nowrap;
-}
+} */
 .navbar .attr-nav li.nav-btn {
 	margin-left: 10px;
 }
-.navbar-nav.attr-nav li .nav-link i {
+/* .navbar-nav.attr-nav li .nav-link i {
 	font-size: 20px;
-}
+} */
 .hover_menu_style2 .navbar .navbar-nav.attr-nav > li > .nav-link {
 	margin: 0;
 	padding: 20px 10px;

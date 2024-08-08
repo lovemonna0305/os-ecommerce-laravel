@@ -577,7 +577,7 @@
 
             $.post('{{ route('orders.details') }}', { _token : AIZ.data.csrf, order_id : order_id}, function(data){
                 $('#order-details-modal-body').html(data);
-                $('#order_details').modal();
+                $('#order_details').modal('show');
                 $('.c-preloader').hide();
                 AIZ.plugins.bootstrapSelect('refresh');
             });

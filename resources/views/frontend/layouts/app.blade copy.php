@@ -450,7 +450,7 @@
                 $('#modal-size').addClass('modal-lg');
             }
             $('#addToCart-modal-body').html(null);
-            $('#addToCart').modal();
+            $('#addToCart').modal('show');
             $('.c-preloader').show();
             $.post('{{ route('cart.showCartModal') }}', {_token: AIZ.data.csrf, id:id}, function(data){
                 $('.c-preloader').hide();
@@ -524,7 +524,7 @@
             @endif
 
             if(checkAddToCartValidity()) {
-                $('#addToCart').modal();
+                $('#addToCart').modal('show');
                 $('.c-preloader').show();
                 $.ajax({
                     type:"POST",
@@ -554,7 +554,7 @@
             
             if(checkAddToCartValidity()) {
                 $('#addToCart-modal-body').html(null);
-                $('#addToCart').modal();
+                $('#addToCart').modal('show');
                 $('.c-preloader').show();
                 $.ajax({
                     type:"POST",
