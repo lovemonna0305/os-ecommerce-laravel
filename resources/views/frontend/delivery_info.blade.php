@@ -414,7 +414,7 @@
                                     {{ translate('Return to shop')}}
                                 </a>
                                 <!-- Continue to Payment -->
-                                <button type="submit" class="btn btn-primary fs-14 fw-700 rounded-0 px-4">{{ translate('Continue to Payment')}}</button>
+                                <button type="submit" class="btn btn-fill-line">{{ translate('Continue to Payment')}}</button>
                             </div>
                         </form>
                     </div>

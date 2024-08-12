@@ -111,11 +111,11 @@
                         <!-- Continue to Shipping -->
                         <div class="col-md-6 text-center text-md-right">
                             @if(Auth::check())
-                                <a href="{{ route('checkout.shipping_info') }}" class="btn btn-primary fs-14 fw-700 rounded-0 px-4">
+                                <a href="{{ route('checkout.shipping_info') }}" class="btn btn-fill-line">
                                     {{ translate('Continue to Shipping')}}
                                 </a>
                             @else
-                                <button class="btn btn-primary fs-14 fw-700 rounded-0 px-4" onclick="showLoginModal()">{{ translate('Continue to Shipping')}}</button>
+                                <button class="btn btn-fill-line" onclick="showLoginModal()">{{ translate('Continue to Shipping')}}</button>
                             @endif
                         </div>
                     </div>

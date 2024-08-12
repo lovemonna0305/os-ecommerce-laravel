@@ -78,7 +78,7 @@
 
                                                 <!-- Submit Button -->
                                                 <div class="mb-4 mt-4">
-                                                    <button type="submit" class="btn btn-primary btn-block fw-700 fs-14 rounded-4">{{  translate('Login') }}</button>
+                                                    <button type="submit" class="btn btn-fill-out btn-block">{{  translate('Login') }}</button>
                                                 </div>
                                             </form>
 
@@ -112,8 +112,8 @@
 
                                             <!-- Social Login -->
                                             @if(get_setting('google_login') == 1 || get_setting('facebook_login') == 1 || get_setting('twitter_login') == 1 || get_setting('apple_login') == 1)
-                                                <div class="text-center mb-3">
-                                                    <span class="bg-white fs-12 text-gray">{{ translate('Or Login With')}}</span>
+                                                <div class="different_login">
+                                                    <span> {{ translate('Or Login With')}}</span>
                                                 </div>
                                                 <ul class="list-inline social colored text-center mb-4">
                                                     @if (get_setting('facebook_login') == 1)
@@ -168,6 +168,7 @@
             </div>
         </div>
     </section>
+
 @endsection
 
 @section('script')

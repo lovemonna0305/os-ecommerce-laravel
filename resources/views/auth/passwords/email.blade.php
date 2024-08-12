@@ -60,7 +60,7 @@
                                 @endif
                             </div>
                             <div class="form-group text-right">
-                                <button class="btn btn-primary btn-block" type="submit">
+                                <button class="btn btn-fill-out btn-block" type="submit">
                                     {{ translate('Send Password Reset Link') }}
                                 </button>
                             </div>

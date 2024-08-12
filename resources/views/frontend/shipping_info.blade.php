@@ -123,7 +123,7 @@
                                     </div>
                                     <!-- Continue to Delivery Info -->
                                     <div class="col-md-6 text-center text-md-right">
-                                        <button type="submit" class="btn btn-primary fs-14 fw-700 rounded-0 px-4">{{ translate('Continue to Delivery Info')}}</a>
+                                        <button type="submit" class="btn btn-fill-line">{{ translate('Continue to Delivery Info')}}</a>
                                     </div>
                                 </div>
                             </div>

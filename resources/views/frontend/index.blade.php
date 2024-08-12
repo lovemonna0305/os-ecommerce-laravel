@@ -109,7 +109,7 @@
                         @foreach ($best_selling_products as $key => $product)
                         <div class="item">
                             <div class="product">
-                                @include('frontend.partials.product_box_1',['product' => $product])
+                                @include('frontend.partials.product_box',['product' => $product])
                             </div>
                         </div>
                         @endforeach
@@ -124,8 +124,8 @@
     <!-- START SECTION SINGLE BANNER --> 
     <div class="section bg_light_blue2 pb-0 pt-md-0">
         <div class="container">
-            <div class="row align-items-center flex-row-reverse">
-                <div class="col-md-6 offset-md-1">
+            <div class="row align-items-center flex-row-reverse justify-content-center">
+                <div class="col-md-4">
                     <div class="medium_divider d-none d-md-block clearfix"></div>
                     <div class="trand_banner_text text-center text-md-start">
                         <div class="heading_s1 mb-3">
@@ -137,7 +137,7 @@
                     </div>
                     <div class="medium_divider clearfix"></div>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-4">
                     <div class="text-center trading_img">
                         <img src="{{ static_asset('assets1/images/tranding_img.png') }}" alt="tranding_img"/>
                     </div>
@@ -342,7 +342,7 @@
                             @foreach ($newest_products as $key => $new_product)
                             <div class="item">
                                 <div class="product">
-                                    @include('frontend.partials.product_box_1',['product' => $new_product])
+                                    @include('frontend.partials.product_box',['product' => $new_product])
                                 </div>
                             </div>
                             @endforeach

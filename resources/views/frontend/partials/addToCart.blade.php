@@ -143,7 +143,7 @@
                                     <div class="col-9">
                                         <div class="aiz-radio-inline">
                                             @foreach ($choice->values as $key => $value)
-                                            <label class="aiz-megabox pl-0 mr-2 mb-0">
+                                            <label class="aiz-megabox pl-0 mr-2 mb-1">
                                                 <input
                                                     type="radio"
                                                     name="attribute_id_{{ $choice->attribute_id }}"
@@ -171,7 +171,7 @@
                                 <div class="col-9">
                                     <div class="aiz-radio-inline">
                                         @foreach (json_decode($product->colors) as $key => $color)
-                                        <label class="aiz-megabox pl-0 mr-2 mb-0" data-toggle="tooltip" data-title="{{ \App\Models\Color::where('code', $color)->first()->name }}">
+                                        <label class="aiz-megabox pl-0 mr-2 mb-1" data-toggle="tooltip" data-title="{{ \App\Models\Color::where('code', $color)->first()->name }}">
                                             <input
                                                 type="radio"
                                                 name="color"
