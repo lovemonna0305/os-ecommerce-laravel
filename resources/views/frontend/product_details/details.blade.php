@@ -191,6 +191,19 @@
                 </tbody>
             </table>
         @else
+        <div class="row no-gutters mb-3">
+            <div class="col-sm-2">
+                <div class="text-secondary fs-14 fw-400">{{ translate('Prod No') }}</div>
+            </div>
+            <div class="col-sm-10">
+                <div class="d-flex align-items-center">
+                    <!-- Discount Price -->
+                    <strong class="fs-16 fw-700 text-primary">
+                        {{ $detailedProduct->prod_no }}
+                    </strong>
+                </div>
+            </div>
+        </div>
         <!-- Without Wholesale -->
             @if (home_price($detailedProduct) != home_discounted_price($detailedProduct))
                 <div class="row no-gutters mb-3">
